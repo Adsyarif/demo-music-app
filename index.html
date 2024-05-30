@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Muhammad Adrisa NS protofolio website.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, System, Dynamics, SystemDyanamics, Sysdyn, analyst, engineer, itb, bandung">
+    <meta name="author" content="Adrisa Syarif">
+    <link rel="icon" href="./asset/images/icon-adrisa/favicon-32x32.png"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/night-themes.css">
+    <link rel="stylesheet" href="./styles/responsive-0-414.css"/>
+    <link rel="stylesheet" href="./styles/responsive-576.css"/>
+    <link rel="stylesheet" href="./styles/responsive-754.css"/>
+    <link rel="stylesheet" href="./styles/responsive-992.css"/>
+    <link rel="stylesheet" href="./styles/responsive-1200.css"/>
+    <link rel="stylesheet" href="./styles/responsive-1400.css"/>
+    <link rel="stylesheet" href="./styles/responsive-1859.css"/>
+    <title>Let's Jam!</title>
+  </head>
+
+  <body class="themes-day-body">
+    <!-- header start -->
+    <header class="nav-bar container">
+        <nav class="nav-container">
+          <picture class="logo">
+            <source media="(max-width: 991px)" srcset="./asset/images/image-music/adrisa-logo-night.webp" alt="icon website">
+            <img class="default-img" src="./asset/images/image-music/adrisa-logo-day.webp" alt="icon website" />
+          </picture>
+          <div class="btn-util">
+            <div id="container-toggle" class="themes-toggle-day themes-toggle-config">
+              <span id="container-day" class="themes-day-day"><button id="button-themes-day" aria-label ="buttonChangesThemes"><i class="sun-p sun-config-day fa fa-sun-o"></i></button></span>
+              <span id="container-night" class="themes-night-day"><button id="button-themes-night" aria-label ="buttonChangesThemes"><i class="moon-p moon-config-day fa fa-moon-o"></i></button></span>
+            </div>
+            <div class="btn-dismiss btn-contact">  
+              <button id="modal-btn">Get in touch!</button>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="main-content container">
+      <!-- section personal information start -->
+      <section id="content" class="personal-container card personal-grid">
+        <!-- <div id="personal-card"> -->
+          <h1 class="white-text">Let's Jam Together!</h1>
+          <article class="greeting-container">
+            <p class="white-text">This website contain short of music and mini game. You have to remember the given pattern to win the game. 
+              Press the button below to start the game.</p>
+            <div>
+              <i class="fa fa-calendar-o" style="color: white;"></i> 
+            </div>
+            <div>
+              <time id="today" class="white-text" datetime="">Today</time>
+            </div>
+          </article>
+          <hr>
+          <p class="pun white-text">
+            Click me for some jokes!
+          </p>
+        <!-- </div> -->
+      </section>
+      <!-- section personal information end --> 
+
+      <!-- section social media start -->
+      <section class="info-card-1 card info-card-1-grid" >     
+        <!-- <div class="card-icon">
+          <img src="./asset/images/logo-light-sm.webp" alt="profile-social">
+        </div> -->
+        <div>
+          <h2>Social Media</h2>
+        </div>
+        <div class="card-md">
+          <figure>
+            <img class="social-media-icon" src="./asset/images/icon-social/twitter-light.webp" alt="twitter logo" />
+            <figcaption>Twitter</figcaption>
+          </figure>
+          <figure>
+            <img class="social-media-icon" src="./asset/images/icon-social/facebook-light.webp" alt="facebook logo" />
+            <figcaption>Facebook</figcaption>
+          </figure>
+          <figure>
+            <img class="social-media-icon" src="./asset/images/icon-social/instagram-light.webp" alt="instagram logo" />
+            <figcaption>Instagram</figcaption>
+          </figure>
+          <figure>
+            <img class="social-media-icon" src="./asset/images/icon-social/linkedin-light.webp" alt="linkedin logo" />
+            <figcaption>LinkedIn</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- section social media end -->
+
+      <section class="info-card-1 card info-card-2-grid">
+        
+        <div class="header-music">
+          <h2>Demos</h2>
+          <div class="marquee">
+            <div id="music-information" class="marquee__inner">
+              <p class="text-music text-music-1">Press logo to play</p>
+              <p class="text-music text-music-2">Press logo to play</p>
+            </div>
+          </div>
+          <div id="control-button" class="btn-control invisible">
+            <!-- <i class="fa fa-play"></i> -->
+            <i id="pause-button" class="fa fa-pause"></i>
+            <i id="stop-button" class="fa fa-stop"></i>
+            <i id="close-music" class="fa fa-times"></i>
+            <!-- <button id="close-music" class="button-close">&times;</button> -->
+          </div>
+        </div>
+        <div class="card-md song-list">
+            <figure id="agito-song">
+              <img class="social-media-icon" src="./asset/images/image-music/agito-logo-day.webp" alt="agito logo" />
+              <figcaption>Agito</figcaption>
+            </figure>
+            <figure id="muse-song">
+              <img class="social-media-icon" src="./asset/images/image-music/muse-logo-day.webp" alt="muse band logo" />
+              <figcaption>Muse</figcaption>
+            </figure>
+            <figure id="blackpink-song">
+              <img class="social-media-icon" src="./asset/images/image-music/blackpink-logo-day.webp" alt="blackpink logo" />
+              <figcaption>BlackPink</figcaption>
+            </figure>
+            <figure id="eminem-song">
+              <img class="social-media-icon"  src="./asset/images/image-music/eminem-logo-day.webp" alt="eminem logo" />
+              <figcaption>Eminem</figcaption>
+            </figure>
+        </div>
+      </section>
+    
+      
+      <!-- portofolio start -->
+      <section id="my-skills-content" class="card protofolio protofolio-grid bg-content-day">
+        <div>
+          <h2>Incoming Event</h2>
+          <h3>Check the incoming concert here.</h3>
+        </div>
+        <!-- section carousel start -->
+        <div class="carousel">
+          <div class="slider">
+            <a href="#slide-1">1</i></a>
+            <a href="#slide-2">2</i></a>
+            <a href="#slide-3">3</i></a>
+            <a href="#slide-4">4</i></a>
+          </div>
+          <div class="slides">
+            <div id="slide-1">
+              <a href="https://www.muse.mu/" target="_blank">
+                <img class="img-project" src="./asset/images/image-carousel/muse-banner.webp" alt="muse band banner"/>
+              </a>
+            </div>
+            <div id="slide-2">
+              <a href="https://www.eminem.com/" target="_blank">
+                <img class="img-project" src="./asset/images/image-carousel/eminem-banner.webp" alt="eminem banner"/>
+              </a>
+            </div>
+            <div id="slide-3">
+              <a href="https://www.blackpinkmusic.com/" target="_blank">
+                <img class="img-project" src="./asset/images/image-carousel/blackpink-banner.webp" alt="blackpink banner"/>
+              </a>
+            </div>
+            <div id="slide-4">
+              <a href="https://www.suede.co.uk/" target="_blank">
+                <img class="img-project" src="./asset/images/image-carousel/suede-banner.webp" alt="suede band banner"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Section carousel end -->
+        <div class="dropup">
+          <button class="drop-btn">More Singer</button>
+          <div class="dropup-content">
+            <ul id="my-skill-list" class="img-list">
+              <li>
+                <a href="https://www.taylorswift.com/">Taylor Swift</a>
+              </li>
+              <li>
+                <a href="https://www.avengedsevenfold.com/">Avenged Seven Fold</a>
+              </li>
+              <li>
+                <a href="#">See all...</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- portofolio end -->
+      <!-- image dump start -->
+      <section class="image-dump-grid image-dump animated-grid">
+        <!-- 1 -->
+        <button id="img-1" class="image-shake card key-btn w">w</button>
+        <!-- 2 -->
+        <button id="img-2" class="image-shake card key-btn i">i</button>
+        <!-- 3 -->
+        <button id="img-3" class="image-shake card key-btn a">a</button>
+        <!-- 4 -->
+        <button id="img-4" class="image-shake card key-btn d">d</button>
+        <!-- 5 -->
+        <button id="img-5" class="image-shake card key-btn space">space</button>
+        <!-- 6 -->
+        <button id="img-6" class="image-shake card key-btn j">j</button>
+      </section>
+      <!-- image dump end -->
+
+    </main>
+    <!-- main end -->
+    
+
+    <!-- form modal start -->
+    <div id="card-form-modal">
+      <div
+        id="form-modal"
+        class="pop-up modal flex-col-10 flex-align-c center"
+        autocomplete="off"
+      >
+        <!-- form modal header start -->
+        <header class="flex-col-10">
+          <button id="close-btn">&times;</button>
+          <div class="flex-align-c">
+            <h2>Let's set the time!</h2>
+            <img
+              class="img-appoinment"
+              src="./asset/images/appointment-booking-with-calendar_52683-39831.webp"
+              alt="appoiment-image"
+            />
+          </div>
+        </header>
+        <!-- modal header end -->
+        <div class="modal-content">
+          <form action="#" class="container-form flex-col-10">
+            <label for="name">Name <span class="required">*</span></label>
+            <input class="input" id="name" type="text" placeholder="Input your name." required/>
+            <label for="email">Email <span class="required">*</label>
+            <input class="input" id="email" type="email" placeholder="Input your email." required/>
+            <label for="time">Time <span class="required">*</label>
+            <input class="input" id="time" type="datetime-local" required />
+            <label for="brief-meet" class="label-hide">Short brief <span class="required">*</label>
+            <textarea
+              class="input"
+              name="brief-meet"
+              id="brief-meet"
+              cols="30"
+              rows="10"
+              placeholder="Tell me what can I help you."
+              required
+            ></textarea>
+          </form>
+        </div>
+        <p class="text-required"><span class="required">*</span>Required</p>
+        <div class="btn-dismiss">
+          <input type="submit" name="submit" id="submit" value="Submit" />
+        </div>
+      </div>
+    </div>
+    <!-- form modal end -->
+
+    <!-- confirm modal start -->
+    <div class="pop-up center">
+      <div class="icon icon-border-green">
+        <i class="fa fa-check"></i>
+      </div>
+      <div class="title">
+        <h1>Success!!</h1>
+      </div>
+      <div class="description">
+        <p class="confirm-text">Date : <span id="current-date"></span></p>
+        <p class="confirm-text">Time : <span id="current-time"></span></p>
+        <br />
+        <p>
+          Thank you <span id="client-name">name</span> for contacting me. We will meet online using zoom platform.
+          The invitation link will be sent to <span id="client-email">email</span>.
+        </p>
+      </div>
+      <div class="btn-dismiss">
+        <button id="dismiss-popup">Dismiss</button>
+      </div>
+    </div>
+    <!-- confirm modal end -->
+
+    <!-- failed modal start ==== DEPRECATED: TL Feedback -> Not good for UX -->
+    <!-- <div class="pop-up center">
+      <div class="icon icon-border-red">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="title">
+        <h1>Failed!!</h1>
+      </div>
+      <div class="description">
+        <p>Please fill the required fields!</p>
+      </div>
+      <div class="btn-dismiss">
+        <button id="dismiss-failed">Dismiss</button>
+      </div>
+    </div> -->
+    <!-- failed modal end -->
+
+    <!-- game start -->
+    <section class="game-start">
+      <h2 id="game-indicator" class="game-info container">Press here to play!</h2>
+    </section>
+    <!-- game end -->
+
+    <!-- cover image start -->
+    <div id="character-image" class="side-image-cover">
+    </div>
+    <!-- cover image end -->
+
+    <!-- footer start -->
+    <footer class="container ">
+      <p id="footer-content" class="footer-color-day">@2023 Muhammad Adrisa NS</p>
+    </footer>
+    <!-- footer end -->
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>

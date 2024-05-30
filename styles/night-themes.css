@@ -1,0 +1,49 @@
+/* toggle start */
+
+.themes-toggle-night {
+  background-color: #f5f5f5;
+}
+
+.sun-config-night {
+  color: #2926266b;
+}
+
+.moon-config-night {
+  color: black;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+.themes-day-night {
+  background-color: #2926266b;
+}
+.themes-night-body {
+  background-color: #2926266b;
+}
+
+.side-image-cover {
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+  object-position: bottom right;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+  top: -200%;
+  transform: translate(50%, -100%) scale(1);
+  transition: opacity 300ms ease-in-out, top 1000ms ease-in-out,
+    transform 1000ms ease-in-out;
+}
+
+.side-image-cover.active-song {
+  opacity: 1;
+  top: 100%;
+  transform: translate(0%, -100%) scale(1);
+  transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+/* toggle end */
